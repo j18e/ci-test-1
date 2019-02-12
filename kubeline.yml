@@ -1,0 +1,5 @@
+stages:
+- name: build
+  type: docker-build
+  push: j18e/ci-test-1:$GIT_SHORT_HASH
+  additional_tags: [latest]
