@@ -1,7 +1,3 @@
 stages:
 - name: build
   type: docker-build
-  image_name: j18e/ci-test-1
-  image_tags:
-  - $GIT_SHORT_HASH
-  - latest
