@@ -1,5 +1,6 @@
 stages:
 - type: docker-build
+  name: buildit
 - name: push
   type: docker-push
   from_stage: build
