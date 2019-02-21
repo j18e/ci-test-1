@@ -2,7 +2,7 @@ stages:
 - name: build
   type: docker-build
   build_dir: '.'
-  dockerfile: something
+  dockerfile: ./Dockerfile
 - name: push
   type: docker-push
   from_stage: build
