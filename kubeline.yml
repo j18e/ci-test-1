@@ -1,7 +1,6 @@
 stages:
 - type: docker-build
   name: build
-  dockerfile: soeom/docker
 - name: push
   type: docker-push
   from_stage: build
