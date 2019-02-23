@@ -4,7 +4,7 @@ stages:
 - name: push
   type: docker-push
   from_stage: build
-  repo: j18e/ci-test-1
+  repo: j18fe/ci-test-1
   tags:
   - $KUBELINE_GIT_BRANCH
   - $KUBELINE_GIT_COMMIT_SHORT
