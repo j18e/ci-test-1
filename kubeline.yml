@@ -9,4 +9,4 @@ stages:
   - $KUBELINE_GIT_BRANCH
   - $KUBELINE_GIT_COMMIT_SHORT
 - name: anotherbuild
-  type: build
+  type: docker-build
