@@ -2,12 +2,10 @@ stages:
 - type: docker-build
   name: build
 - type: custom
-  name: randomstuff
+  name: test
   image: alpine
   commands:
-  - echo doing stuff
-  - ls -l
-  - cat Dockerfile
+  - echo testing...
 - name: push
   type: docker-push
   from_stage: build
