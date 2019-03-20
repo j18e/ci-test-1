@@ -3,7 +3,7 @@ stages:
   type: custom
   image: python:3-alpine
   commands:
-  - python code.py
+  - /usr/local/bin/python code.py
 - name: build
   type: docker-build
 - name: push
