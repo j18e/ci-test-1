@@ -1,9 +1,9 @@
 stages:
 - name: test
   type: custom
-  image: python:3-alpine
+  image: alpine
   commands:
-  - /usr/local/bin/python code.py
+  - failfailfail
 - name: build
   type: docker-build
 - name: push
