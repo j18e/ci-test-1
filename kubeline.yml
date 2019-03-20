@@ -3,7 +3,7 @@ stages:
   type: custom
   image: alpine
   commands:
-  - failfailfail
+  - echo it works
 - name: build
   type: docker-build
 - name: push
