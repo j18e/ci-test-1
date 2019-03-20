@@ -1,11 +1,11 @@
 stages:
-- type: docker-build
-  name: build
-- type: custom
-  name: test
-  image: alpine
+- name: test
+  type: custom
+  image: python:3-alpine
   commands:
-  - echo testing...
+  - "/code.py"
+- name: build
+  type: docker-build
 - name: push
   type: docker-push
   from_stage: build
